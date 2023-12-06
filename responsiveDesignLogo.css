@@ -1,0 +1,179 @@
+
+
+nav ul li{
+    background-color: darkslategrey;
+    
+    min-width: 12%;
+    margin: 1em;
+    list-style-type: none; /*This removes bullet points*/
+    border-radius: 1.0em; /*This rounds the corners of the border*/
+
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+
+
+nav ul li a {
+    color: white; /*once a link is visited this will ensure color stays white*/
+   text-decoration: none;  /*this removes underlined text*/
+}   
+
+figure{
+text-align: left;
+
+}
+
+figure img{
+    max-width: 200px;
+}
+
+
+main{
+    background-color:cadetblue;
+   border-top:solid 0.3em black;
+   border-bottom:solid 0.3em black;
+   border-radius: 1.0em; /*This rounds the corners of the border*/
+   margin-bottom: 1em;
+}
+
+#homePage{
+    text-align: center;
+}
+
+
+
+main .row:after{
+   content: ""; 
+   display: table;
+   clear: both;
+}
+
+main div .column{
+   float: left;
+    
+}
+
+main div .left{
+    float: left;
+    width: 20%;
+    padding: 10px;
+   
+}
+
+
+
+main div .right{
+  float: right; 
+  width: 15%;
+  padding: 10px;
+ 
+}
+
+.Table{
+    border: 01.em solid black;
+   
+
+} 
+.Table caption{
+    border: 01.em solid black;
+    font-weight: bold;
+    font-size: 0.1.em;
+}
+
+ .Table caption th, td{
+    padding: 0.5.em;
+    text-align: center;
+    width: 50%;
+}  
+
+#Enroll{
+    border: 01.em solid black;   
+    padding: 0.5.em;
+    text-align: center;
+    width: 35%;
+}
+
+footer{
+    background-color:cadetblue;
+    border-top:solid 0.3em black;
+    border-bottom:solid 0.3em black;
+    border-radius: 1.0em; /*This rounds the corners of the border*/
+    margin-bottom: 1em;    /*This places some space between elements*/
+    font-weight: bold;
+}
+
+
+/*Begin Mobile**/
+@media screen and (max-width: 639px) {
+    nav ul li{
+      border-radius: 1em;  
+    }
+}
+
+.tablet{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+/*End Mobile*/
+
+/*Begin tablet**/
+@media screen and (min-width: 640px) {
+    nav ul li{
+        display: inline-block; /*This lists items horizontally and allows them to stretch*/
+      border-radius: 1em;  
+    }
+}
+
+.desktop{
+    display: none;
+}
+
+/*End Tablet*/
+
+/*Begin Desktop**/
+@media screen and (min-width: 960px) {
+ 
+header{
+    text-align: left;
+    box-shadow: 0.5em, 0.5em, 0.5em black;
+}
+
+header img{
+    width: 100; /*This stretches the image across the view port*/
+    height: auto; /*This height will change based on the size of the view port*/
+}
+   
+    nav{
+        padding-top: 0.4em;
+        padding-bottom: 0.5em;
+        margin-top: -5.1em; /*this displays the vav element above*/
+        width: 60%;
+        float: right; /*This floats the vav elements to the RHS of the page*/
+
+    }
+    
+    nav ul li{
+        display: inline-block; /*This lists items horizontally and allows them to stretch*/
+      border-radius: 1em;  
+    }
+
+    main div .center{
+        padding: 10px;
+        width: 45%;
+        
+        border-right: 0.3em solid black;
+       
+    }
+}
+/*End Desktop*/
